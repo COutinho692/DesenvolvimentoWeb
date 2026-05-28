@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Menu acompanha rolagem da pagina */
+.menu-fixo {
+    position: sticky; 
+    top: 0;
+    z-index: 10;
+    background-color: #222;
+    padding: 15px 30px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-fixo .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Banner */
+.banner {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.banner h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/* Animação keyframes */
+.alerta-animado {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 16px;
+    background-color: #e74c3c;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 14px;
+  
+    animation: pulsar 1.5s infinite alternate;
+}
+
+@keyframes pulsar {
+    from {
+    transform: scale(1);
+    }
+    to {
+    transform: scale(1.2);
+    }
+}
+
+/* Grade de produtos */
+.grid-produtos {
+    max-width: 10000px;
+    margin: 40px auto;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+}
+
+/* Estilização card */
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+footer{
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 15px;
+}
